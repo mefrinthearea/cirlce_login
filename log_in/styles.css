@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252525;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Livvic", sans-serif;
+  overflow: hidden;
+}
+
+/* Form container */
+.login-form {
+  width: 531px;
+  padding: 40px;
+  margin-right: 200px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Hide labels visually but keep them for screen readers */
+label {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Login heading styling */
+h1 {
+  font-family: "Livvic", sans-serif;
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 96px;
+  margin-bottom: 60px;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+/* Input fields */
+input {
+  background: transparent;
+  border: 1px solid #6B6B6B;
+  border-radius: 8px;
+  color: #fff;
+  width: 100%; /* CHANGED from 550px */
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  outline: none;
+}
+
+/* Placeholder text */
+input::placeholder {
+  font-family: "Livvic", sans-serif;
+  color: #999;
+  font-size: 16px;
+}
+
+/* Login button styling */
+.login-btn {
+  font-family: "Livvic", sans-serif;
+  background-color: #FDD835;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  width: 100%; /* CHANGED from 550px */
+  height: 48px; /* CHANGED from auto */
+  margin-top: 30px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+.login-btn:hover {
+  background-color: #0020F2;
+  color: white;
+}
+
+/* Yellow circle */
+.circle-yellow {
+  position: absolute;
+  width: 1200px;
+  height: 1200px;
+  background-color: #FDD835;
+  border-radius: 50%;
+  left: -700px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Blue circle */
+.circle-blue {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background-color: #0047FF;
+  border-radius: 50%;
+  left: -280px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
